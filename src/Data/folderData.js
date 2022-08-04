@@ -1,20 +1,31 @@
+import Group from "../icons/group.svg";
+import Term from "../icons/item-terminal-active.svg";
+// import Open from "../icons/action-add.svg";
+// import Close from "../icons/action-minus.svg";
+
 const explorer = {
   name: "Root",
   isGroup: false,
+  icon: Group,
+  // open: Open,
+  // close: Close,
   items: [
     {
       name: "Op",
       id: 1,
       isGroup: false,
+      icon: Group,
       items: [
         {
           name: "POST" + "   api/op/:op/:id",
           isGroup: false,
+          icon: Term,
           items: [],
         },
         {
           name: "GET" + " api/op/:op/:id",
           isGroup: false,
+          icon: Term,
           items: [],
         },
       ],
@@ -22,10 +33,12 @@ const explorer = {
     {
       name: "item",
       isGroup: false,
+      icon: Group,
       items: [
         {
           name: "POST" + "   api/item/{{table}}",
           isGroup: false,
+          icon: Term,
           items: [
             {
               name: "/api/item/term root",
@@ -139,10 +152,12 @@ const explorer = {
     {
       name: "items",
       isGroup: false,
+      icon: Group,
       items: [
         {
           name: "GET" + "   api/items/{{table}}",
           isGroup: false,
+          icon: Term,
           items: [
             {
               name: "/api/items/term ",
