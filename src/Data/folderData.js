@@ -1,4 +1,5 @@
-import Group from "../icons/group.svg";
+import folderOpen from "../icons/folder-open.png";
+import folderClose from "../icons/folder-close.png";
 import Term from "../icons/item-terminal-active.svg";
 // import Open from "../icons/action-add.svg";
 // import Close from "../icons/action-minus.svg";
@@ -6,7 +7,8 @@ import Term from "../icons/item-terminal-active.svg";
 const explorer = {
   name: "Root",
   isGroup: false,
-  icon: Group,
+  icon: folderOpen,
+  iconClose: folderClose,
   // open: Open,
   // close: Close,
   items: [
@@ -14,18 +16,21 @@ const explorer = {
       name: "Op",
       id: 1,
       isGroup: false,
-      icon: Group,
+      icon: folderOpen,
+      iconClose: folderClose,
       items: [
         {
           name: "POST" + "   api/op/:op/:id",
           isGroup: false,
           icon: Term,
+          iconClose: Term,
           items: [],
         },
         {
           name: "GET" + " api/op/:op/:id",
           isGroup: false,
           icon: Term,
+          iconClose: Term,
           items: [],
         },
       ],
@@ -33,12 +38,14 @@ const explorer = {
     {
       name: "item",
       isGroup: false,
-      icon: Group,
+      icon: folderOpen,
+      iconClose: folderClose,
       items: [
         {
           name: "POST" + "   api/item/{{table}}",
           isGroup: false,
           icon: Term,
+          iconClose: Term,
           items: [
             {
               name: "/api/item/term root",
@@ -152,12 +159,14 @@ const explorer = {
     {
       name: "items",
       isGroup: false,
-      icon: Group,
+      icon: folderOpen,
+      iconClose: folderClose,
       items: [
         {
           name: "GET" + "   api/items/{{table}}",
           isGroup: false,
           icon: Term,
+          iconClose: Term,
           items: [
             {
               name: "/api/items/term ",

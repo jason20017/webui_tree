@@ -1,5 +1,5 @@
 * {
-  margin: 0;
+  margin: 0 0 0 2px;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -13,9 +13,8 @@ html, body {
 
 .icon {
   margin-right: 6px;
-}
-
-.icon::before {
-  content: url(../icons/action-add.svg);
+  margin-bottom: 3px;
+  max-width: 20px;
+  max-height: 20px;
 }
 /*# sourceMappingURL=styles.css.map */
