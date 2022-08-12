@@ -21,6 +21,7 @@ const explorer = {
       items: [
         {
           name: "POST" + "   api/op/:op/:id",
+          id: 1,
           isGroup: false,
           icon: Term,
           iconClose: Term,
@@ -28,6 +29,7 @@ const explorer = {
         },
         {
           name: "GET" + " api/op/:op/:id",
+          id: 2,
           isGroup: false,
           icon: Term,
           iconClose: Term,
@@ -37,12 +39,14 @@ const explorer = {
     },
     {
       name: "item",
+      id: 2,
       isGroup: false,
       icon: folderOpen,
       iconClose: folderClose,
       items: [
         {
           name: "POST" + "   api/item/{{table}}",
+          id: 1,
           isGroup: false,
           icon: Term,
           iconClose: Term,
@@ -158,18 +162,21 @@ const explorer = {
     },
     {
       name: "items",
+      id: 3,
       isGroup: false,
       icon: folderOpen,
       iconClose: folderClose,
       items: [
         {
           name: "GET" + "   api/items/{{table}}",
+          id: 1,
           isGroup: false,
           icon: Term,
           iconClose: Term,
           items: [
             {
               name: "/api/items/term ",
+              id: 1,
               isGroup: false,
               items: [],
             },
